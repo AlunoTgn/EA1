@@ -1,0 +1,35 @@
+/**********************************************************************************
+5.Faça um algoritmo que leia dois valores para as variáveis A e B e efetue a troca
+dos valores de forma que a variável A passe a possuir o valor da variável B e a
+variável B passe a possuir o valor da variável A. 
+Apresente os valores trocados.
+A = 10 e B = 5.... A = 5 e B = 10
+************************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+
+// Variaveis
+    int A, B, aux;
+
+// Entrada
+    printf("Entre com o valor de A: ");
+    scanf("%d", &A);
+    printf("Entre com o valor de B: ");
+    scanf("%d", &B);
+
+//Processamento
+    aux = A;
+    A = B;
+    B = aux;
+
+//Saída
+    printf(" O novo valor de A é:  %d \n", A);
+    printf(" O novo valor de B é:  %d \n", B);
+
+    return 0;
+
+}
+

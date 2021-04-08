@@ -1,0 +1,30 @@
+/****************************************************************************
+4. Faça um algoritmo que leia os valores de COMPRIMENTO, LARGURA e
+ALTURA e apresente o valor do volume de uma caixa retangular. Utilize para o
+cálculo a fórmula VOLUME = COMPRIMENTO * LARGURA * ALTURA.
+*****************************************************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    float volume, comprimento, largura, altura;
+    printf ("PARO OBTER O VOLUME DE UMA CAIXA RETANGULAR, DIGITE A SEGUIR O QUE SE PEDE?\n");
+//obtendo as entradas
+    printf ("Digite o comprimento?\n>>");
+    scanf ("%f", &comprimento);
+
+    printf ("Digite a largura?\n>>");
+    scanf ("%f", &largura);
+
+    printf ("Digite a altura?\n>>");
+    scanf ("%f", &altura);
+
+//formula
+    volume = comprimento * largura * altura;
+
+//saida
+    printf ("O volume da caixa retangular e: %.3f", volume);
+
+    return 0;
+}
